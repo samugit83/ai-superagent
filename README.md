@@ -1,4 +1,5 @@
 Building an Advanced Web App with Generative AI Integration Tutorial
+
 Watch the full tutorial here:
 
 Welcome to our in-depth tutorial on integrating Generative AI into your web application! This comprehensive guide will walk you through the process of creating a super-agent that not only scrapes the web for data but also connects seamlessly to the most advanced foundation models, including Claude 3 Sonnet. With the power of Next.js, Node.js, Python, Amazon Web Services (AWS), Bedrock, Socket.io, and Lambda, you'll be equipped to create cutting-edge AI-powered applications.
