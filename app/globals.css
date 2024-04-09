@@ -83,17 +83,11 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  padding-top: 20px;
+  background-color: rgb(244, 244, 244);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 a {
   color: inherit;
@@ -104,4 +98,123 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+.page_gpt-main-cont {
+  margin-top: 60px;
+  padding: 20px;
+  border: solid 4px rgb(233, 233, 233);
+  border-radius: 20px;
+  background-color: white;
+  margin: auto;
+  width: 70%;
+}
+
+@media only screen and  (max-width: 1200px) {
+  .page_gpt-main-cont {
+    width: 100%;
+  }
+}
+
+.page_gpt-chat-cont {
+  height: 530px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  white-space: pre-line;
+}
+
+.page_gpt-chat-cont::-webkit-scrollbar {
+  width: 0;  /* This hides the scrollbar */
+}
+
+.page_gpt-models-cont {
+  background-color: #F0F2F5;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px lightgrey;
+  display: flex;
+}
+
+.page_gpt-single-model {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+}
+
+.page_gpt-single-model-selected {
+  border: solid 2px #40A9FF; 
+}
+
+
+.page_gpt-chat-message-cont {
+  padding: 10px;
+  white-space: pre-line;
+}
+
+
+.page_gpt-chat-speach-block {
+  display: flex;
+}
+
+.page_gpt-training-window {
+  padding: 20px;
+  white-space: pre-line;
+  color: grey;
+}
+
+
+.page_gpt-training-window-start {
+  display: flex;
+  align-items: center;
+  color: #06AD06;
+  margin-top: 15px;
+}
+
+
+.page_gpt-superscript {
+  font-size: 12px; /* Adjust the font size to be smaller */
+  vertical-align: super; /* Align the text to be superscript */
+  color: #40A9FF;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+.page_gpt-icon-cont-traces {
+  position: absolute;
+  top: 90px;
+  left: 170px;
+}
+
+.page_gpt-icon-cont-traces-text {
+  position: relative;
+  bottom: 35px;
+  color:#4fa94d;
+  cursor: pointer;
+}
+
+.page_gpt-icon-cont-traces-text:hover{
+  color: #a0c7a0;
+}
+
+.page_gpt-icon-cont-traces-cont {
+  position: relative;
+  right: 165px;
+  top: -40px;
+  background-color: black;
+  padding: 10px;
+  overflow: auto;
+  max-width: 480px;
+  max-height: 720px;
+}
+
+.page_gpt-main-cont-agenteai {
+  margin-left: 500px;
 }

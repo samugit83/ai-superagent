@@ -1,0 +1,111 @@
+
+
+------------------------------------------------------------for bedrock-api lambda role:
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "bedrock:StartIngestionJob",
+            "Resource": "*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:RetrieveAndGenerate",
+                "bedrock:Retrieve"
+            ],
+            "Resource": "arn:aws:bedrock:us-west-2:<aws account id>:knowledge-base/*"
+        }
+    ]
+}
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "bedrock:GetIngestionJob",
+            "Resource": "*"
+        }
+    ]
+}
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Sid": "AllowInference",
+        "Effect": "Allow",
+        "Action": [
+            "bedrock:InvokeModel",
+            "bedrock:InvokeModelWithResponseStream"
+        ],
+        "Resource": [
+            "arn:aws:bedrock:*::foundation-model/anthropic.claude-v2",
+            "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0",
+            "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-haiku-20240307-v1:0"
+        ]
+    }
+}
+
+
+
+
+
+
+------------------------------------------------------------for ActionGroupGenericQuestionToModel lambda role:
+
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Sid": "AllowInference",
+        "Effect": "Allow",
+        "Action": [
+            "bedrock:InvokeModel",
+            "bedrock:InvokeModelWithResponseStream"
+        ],
+        "Resource": [
+            "arn:aws:bedrock:*::foundation-model/anthropic.claude-v2",
+            "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0"
+        ]
+    }
+}
+
+
+------------------------------------------------------------ for opensearch MANAGE DATA ACCES:
+
+[
+  {
+    "Rules": [
+      {
+        "Resource": [
+          "index/bedrock-knowledge-base-<id knowledge>/*"
+        ],
+        "Permission": [
+          "aoss:DescribeIndex",
+          "aoss:ReadDocument",
+          "aoss:WriteDocument"
+        ],
+        "ResourceType": "index"
+      }
+    ],
+    "Principal": [
+      "<arn string>"
+    ],
+    "Description": "Data access policy"
+  }
+]

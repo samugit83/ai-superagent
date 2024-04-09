@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Building an Advanced Web App with Generative AI Integration Tutorial
+Watch the full tutorial here:
 
-## Getting Started
+Welcome to our in-depth tutorial on integrating Generative AI into your web application! This comprehensive guide will walk you through the process of creating a super-agent that not only scrapes the web for data but also connects seamlessly to the most advanced foundation models, including Claude 3 Sonnet. With the power of Next.js, Node.js, Python, Amazon Web Services (AWS), Bedrock, Socket.io, and Lambda, you'll be equipped to create cutting-edge AI-powered applications.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In this tutorial, we'll cover the following key areas:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Setting up your development environment with Next.js and Node.js for the frontend and backend.
+Implementing web scraping capabilities using Python, allowing your app to gather data from various online sources.
+Integrating Claude 3 Sonnet and other advanced foundation models for Generative AI tasks, leveraging the power of Amazon Web Services (AWS) and Bedrock for robust infrastructure.
+Training your AI models effortlessly by uploading text files directly to the system.
+Building real-time communication features using Socket.io for seamless interactions between users and AI agents.
+Deploying your application with AWS Lambda for scalable and cost-effective serverless architecture.
+Whether you're an experienced developer looking to dive into advanced AI integration or a curious learner eager to explore cutting-edge technologies, this tutorial is designed to provide you with practical insights and hands-on experience. By the end of this tutorial, you'll have the knowledge and skills to create sophisticated web applications empowered by Generative AI, including the groundbreaking Claude 3 Sonnet model.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Before you begin, ensure you have the following:
 
-## Learn More
+Basic understanding of JavaScript (Node.js), Python, and web development concepts.
+Installed Node.js and npm (Node Package Manager) on your system.
+Access to Amazon Web Services (AWS) account (for deployment).
+Familiarity with Next.js, Socket.io, and AWS Lambda is beneficial but not mandatory.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

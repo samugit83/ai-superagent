@@ -9,9 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-bedrock-agent-runtime": "^3.549.0",
+    "@aws-sdk/client-s3": "^3.550.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^2.2.3",
+    "ant-design": "^1.0.0",
+    "antd": "^4.19.5",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "next": "14.1.4",
+    "prismjs": "^1.29.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-loader-spinner": "^6.1.6",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
   },
   "devDependencies": {
     "eslint": "^8",
